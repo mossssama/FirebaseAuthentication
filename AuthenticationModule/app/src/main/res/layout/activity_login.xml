@@ -10,10 +10,10 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Register">
+        tools:context=".Authentication.SignUpScreen">
 
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/etEmailLogin"
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:layout_margin="40dp"
@@ -23,34 +23,35 @@
             app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/etPasswordLogin"
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:layout_margin="40dp"
             android:hint="Enter Password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+            app:layout_constraintTop_toBottomOf="@+id/etEmailLogin" />
 
         <Button
-            android:id="@+id/btnRegister"
+            android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="40dp"
-            android:text="Register"
+            android:text="Login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordLogin" />
 
-<!--        <ProgressBar-->
-<!--            android:id="@+id/prograssBar"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:visibility="gone"-->
-<!--            app:layout_constraintBottom_toBottomOf="@+id/etPassword"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/etEmail"-->
-<!--            app:layout_constraintTop_toTopOf="@+id/etEmail" />-->
+        <Button
+            android:id="@+id/btnSignInFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="Sign UP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline2"
@@ -58,5 +59,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.11" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
